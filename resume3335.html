@@ -1,0 +1,2337 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
+
+
+
+  
+
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap" rel="stylesheet">
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&display=swap" rel="stylesheet">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Triangles&display=swap" rel="stylesheet">
+
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+
+
+  
+
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Emblema+One&display=swap" rel="stylesheet">
+
+  
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+  <title>print("林俊傑的履歷")</title>
+
+    <!-- <link rel="canonical" href="https://codepen.io/blakeeric/pen/MWwGpmR">
+   -->
+  
+  
+  
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
+
+body
+{
+
+    background-color: black;
+ 
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  width: 100%;
+  color: rgb(0, 162, 0);
+  height: 800vh;
+  text-decoration: none;
+
+}
+
+/* header {
+  height: 200vh;
+} */
+
+.container {
+  /* hide fixed overflow contents */
+  clip: rect(0, auto, auto, 0);
+
+  /* does not work if overflow = visible */
+  overflow: hidden;
+
+  /* only works with absolute positioning */
+  position: absolute;
+
+  /* Make sure containers are full-width and height */
+  height: 100vh;
+  left: 0;
+  width: 100%;
+  
+  
+  /* safari hack */
+  -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 100%);
+}
+
+.container_solid {
+  background: white;
+  
+  /* position this container at the top of its parent element */
+  top: 0;
+  max-width: 100%;
+}
+
+.title_wrapper {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.title_wrapper h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+
+  
+
+
+
+
+  font-weight: 400;
+}
+
+.container_solid .title_wrapper h1 {
+  /* the text background */
+  background: url(https://media.giphy.com/media/xTiTni6k2cM3YBXCb6/giphy-downsized-large.gif) repeat ;
+  background-size: 50vw auto;
+  background-position: center;
+  
+  /* clip the text is possible */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* fallback text color */
+  color: black;
+
+  font-family: "Rubik Broken Fax", system-ui;
+  font-weight: 200;
+  font-style: normal;
+  max-width: 100%;
+
+
+}
+
+.container_image {
+  /* Grab a free image from unsplash */
+  background-image: url(https://lh3.googleusercontent.com/pw/ABLVV84DL73d_zcRze2-T5ahNBeJu46pfnyF4A2XWGhcsR7tTGGpWVG_zAAfGuU1_67cavIdmOkgb0zx9VAa9HZ2dNi05NSJC71eFzswpK6nSEcYsRiA1gyMmjyYJeW92at2UWC133-jZqCRu2Euya4ql4Q87A=w1314-h739-s-no-gm?authuser=0) ;
+  background-size:100vw auto;
+  background-position: center;
+  background-attachment: fixed;
+  /* background-repeat: repeat; */
+  background-color: rgb(53, 53, 53);
+  background-blend-mode: multiply;
+  
+  /* position the second container below the first container */
+  top: 100vh;
+  max-width: 100%;
+}
+
+.container_image .title_wrapper h1 
+{
+  background:url(https://media.giphy.com/media/3u0WproFrhwsM/giphy.gif) repeat ;
+  
+  background-size: 60%;
+  font-size: 60px ;
+  
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  max-width: 100%;
+
+
+  
+  font-family: "Rubik Doodle Triangles", system-ui;
+  font-weight: 250;
+  font-style: normal;
+
+
+
+
+}
+
+section {
+  min-height: 100vh;
+  /* padding: 2em; */
+  /* margin: auto; */
+  max-width: 800px;
+
+}
+
+section h2 {
+  font-family: 'Fraunces', serif;
+}
+
+section p {
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: black;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Cutsomize multiple layers down below */
+/* 2018 section  */
+
+.title_wrapper2 {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+
+}
+
+.title_wrapper2 h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+
+.container_solid2 {
+
+  background: url(https://lh3.googleusercontent.com/pw/ABLVV87O5vM4PGm9yvk8MxdNFtr3zga3GIZCLqTBHSnxBFj6W4iwzIZrqGnlpRdam6FmNfRuOHxcMP0Z3Lh4RBodgrOUmRLmzSAj-jpkhKlo3MQH0aZ-WfGZZ4DMJ4udaKaN_qHdMQIwBjJoArgUC6TmOyWRcQ=w739-h739-s-no-gm?authuser=0)   ;
+  background-size: 100% ;
+  background-color: rgb(50, 50, 50);
+  background-blend-mode: multiply;
+
+
+  /* position this container at the top of its parent element */
+  /* top: 0; */
+  max-width: 100%;
+}
+
+.container_solid2 .title_wrapper2 h1 {
+  /* the text background */
+  background: url(https://media.giphy.com/media/ZAroQbpF2U6thiu5sj/giphy-downsized-large.gif) repeat ;
+  background-size: 30% auto;
+  background-position: center;
+  
+  /* clip the text is possible */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* fallback text color */
+  color: black;
+
+
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 100%;
+
+
+}
+
+
+
+
+.title_wrapper3 {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+
+
+}
+
+.title_wrapper3 h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+
+.container_solid3 {
+
+  background: url(https://lh3.googleusercontent.com/pw/ABLVV86fo9wsDHXvYf5VkqjNeakwfNvH9ZIZEwl6qFxHhw_8gfcGh3J9x0MY5wwnVIovmSuyFXlI1bFdmNPOLKIrea4XiyIcbcrxL1JHLEQChqAzknOPyV0BBwjpxRbUdbMYb_SCtGjMV0DwJ7qL3NqbU2tQwg=w739-h739-s-no-gm?authuser=0);
+  background-size: 100%;
+  
+  /* position this container at the top of its parent element */
+  /* top: 0; */
+  background-color: rgb(101, 101, 101);
+  background-blend-mode: multiply;
+  max-width: 100%;
+}
+
+.container_solid3 .title_wrapper3 h1 {
+  /* the text background */
+  background: url(https://media.giphy.com/media/pefSNXT5gDroKhWBso/giphy-downsized-large.gif) repeat ;
+  background-size: 50vw auto;
+  background-position: center;
+  
+  /* clip the text is possible */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* fallback text color */
+  color: black;
+
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900 ;
+  font-style: normal;
+
+
+  max-width: 100%;
+
+
+}
+
+
+/*  2019  section  */
+
+
+
+.title_wrapper4 {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+
+
+}
+
+.title_wrapper4 h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+
+.container_solid4 {
+  /* background: rgb(80, 80, 80); */
+background:url(https://lh3.googleusercontent.com/pw/ABLVV86-MDgedt4z8y0Qy7qTcgxrAu-NBmDyBffJM_lzH-0Loy0puTe_RFTmsVSiIEJEByyewJIxtBfBuFM4BsbLMjknS-9YzRIR67pOe1JOQnlb8Vgfqose8lwEIWZKQtDemmiiN3DSjlMaMgFR1YNcwanx0g=w739-h739-s-no-gm?authuser=0) ;
+
+
+background-size: 100%;
+background-color: rgb(96, 96, 96);
+background-blend-mode: multiply;
+
+
+
+
+
+  /* position this container at the top of its parent element */
+  /* top: 0; */
+  max-width: 100%;
+}
+
+.container_solid4 .title_wrapper4 h1 {
+  /* the text background */
+  background: url(https://media.giphy.com/media/qjiClABFIJ17j0xCuM/giphy-downsized-large.gif) repeat ;
+  background-size: 10vw auto;
+  background-position: center;
+  
+  /* clip the text is possible */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* fallback text color */
+  color: black;
+
+  font-family: 'Silkscreen', sans-serif;
+
+
+  max-width: 100%;
+
+
+}
+
+
+
+
+.title_wrapper5 {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+
+
+}
+
+.title_wrapper5 h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+
+.container_solid5 {
+  /* background: rgb(80, 80, 80); */
+background: url(https://lh3.googleusercontent.com/pw/ABLVV84tsG31YPZmw6Ayw4JFHIRQh00bsSvTTQlvsyJMrJcQaoLtSBUzC8wFmd1JdVUUq-87UkgzByFiTIxBjq42yU4C5m5VkgHRlOI6NESvlW7hgnRpgTM-ciKcEQk1jzFiHmySCxaWPjHSf9ieGUiZT8BDFQ=w739-h739-s-no-gm?authuser=0);
+
+background-color: rgb(147, 147, 147);
+background-blend-mode: multiply;
+background-size: 100%;
+
+
+  /* position this container at the top of its parent element */
+  /* top: 0; */
+  max-width: 100%;
+}
+
+.container_solid5 .title_wrapper5 h1 {
+  /* the text background */
+  background: url(https://media.giphy.com/media/3o6Zt3WrCHKF126gvK/giphy.gif) repeat ;
+  background-size: 50vw auto;
+  background-position: center;
+  
+  /* clip the text is possible */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* fallback text color */
+  color: black;
+
+
+  
+
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900 ;
+  font-style: normal;
+
+
+
+  max-width: 100%;
+
+
+}
+
+
+/*  2020 section  */
+
+
+
+
+
+.title_wrapper6 {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+
+
+}
+
+.title_wrapper6 h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+
+.container_solid6 {
+  /* background: rgb(80, 80, 80); */
+  background: url(https://lh3.googleusercontent.com/pw/ABLVV848N9WTEmRllOTGPr0scyJsARCcZ-BF0h8AQrKUbaRjdroCGl0F1Is9od3BU5fYIj5l8iY40zuOOx2gW_k3ud6I_CibySdtC_xtVAVs0b2NmlJ6lY8Q_4DG2r6z66UmLcp3z3-XLpvE6fhD7CLQD5z_Lg=w739-h739-s-no-gm?authuser=0);
+  background-color: rgb(157, 157, 157);
+  background-blend-mode: multiply;
+  background-size: 100%;
+  
+  /* position this container at the top of its parent element */
+  /* top: 0; */
+  max-width: 100%;
+}
+
+.container_solid6 .title_wrapper6 h1 {
+  /* the text background */
+  background: url(https://media.giphy.com/media/gguDdIp7F9OI5hoDvH/giphy.gif) repeat ;
+  background-size: 50vw auto;
+  background-position: center;
+  
+  /* clip the text is possible */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* fallback text color */
+  color: black;
+
+  font-family: 'Emblema One', system-ui;
+
+
+
+  max-width: 100%;
+
+
+}
+
+
+
+
+.title_wrapper7 {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+
+
+}
+
+.title_wrapper7 h1 {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+
+.container_solid7 {
+  /* background: rgb(80, 80, 80); */
+  
+background: url(https://lh3.googleusercontent.com/pw/ABLVV86HzxladkIzQKO3wOh9cW_xTO1wCIk4K9UwoGDeLrw72MFEG4vCnvxKnVpQTA6IW8EZ3xXfqHNMoawXhPQe9ivdRSI3I5Aw2IaPsYjD5gbw9OdcKRHMl1WMqMqknzP8oDqiRqB8EZRwM_6qcCEJ_WKjmw=w739-h739-s-no-gm?authuser=0);
+
+
+background-color: rgb(122, 122, 122);
+background-blend-mode: multiply;
+background-size: 100%;
+
+
+
+  /* position this container at the top of its parent element */
+  /* top: 0; */
+  max-width: 100%;
+}
+
+.container_solid7 .title_wrapper7 h1 {
+  /* the text background */
+  background: url(https://media.giphy.com/media/26wAdFCWjhDd4WDug/giphy.gif) repeat ;
+  background-size: 50vw auto;
+  background-position: center;
+  
+  /* clip the text is possible */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* fallback text color */
+  color: black;
+
+ 
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900 ;
+  font-style: normal;
+
+
+  max-width: 100%;
+
+
+}
+
+
+/* 2021 section  */
+
+
+
+
+
+
+.title_wrapper8 {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+
+
+}
+
+.title_wrapper8 h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+
+.container_solid8 {
+
+background: url(https://lh3.googleusercontent.com/pw/ABLVV87PHr8Q6KjYU6iUqTKTet7zqBW3ov9mXZpQDbkjXLtBgv-_ndpEKnw0BQHKMxxoLCVY0KsrdZyXKRs4-_Du370oiMfPBxXQ_kambOoRtnWxWwpVkg3dFjsXw89FPMK_A9p2sCAZqrJBW-MYgcWmRHxLpg=w739-h739-s-no-gm?authuser=0);
+background-color: gray;
+background-blend-mode: multiply;
+
+background-size: 50% ;
+
+  
+  /* position this container at the top of its parent element */
+  /* top: 0; */
+  max-width: 100%;
+}
+
+.container_solid8 .title_wrapper8 h1 {
+  /* the text background */
+  background: url(https://media.giphy.com/media/l41lHTQBqoAEx45sQ/giphy.gif) repeat ;
+  background-size: 50vw auto;
+  background-position: center;
+  
+  /* clip the text is possible */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* fallback text color */
+  color: black;
+
+  font-family: 'Bungee Inline', sans-serif;
+  max-width: 100%;
+
+
+}
+
+
+
+
+.title_wrapper9 {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+
+
+}
+
+.title_wrapper9 h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+
+.container_solid9 {
+  /* background: rgb(80, 80, 80); */
+
+  background: url(https://lh3.googleusercontent.com/pw/ABLVV860EjKY0IaWGqjvpTHBNvGtbHo52D9hLkkiTgXhV3md9xbL7Zjb4ScGEkdaTCSreyVsOtbuV7JTjHPMjoM2aFm4K_I9cor0bHhMQyl-e58XUxWkBLLPmAmp9R11rueZF491A-nj2By6m5e4In6P0GRcjg=w554-h739-s-no-gm?authuser=0);
+
+
+  background-color: grey;
+  background-blend-mode: multiply;
+
+
+  background-size: 50%;
+
+  
+  /* position this container at the top of its parent element */
+  /* top: 0; */
+  max-width: 100%;
+}
+
+.container_solid9 .title_wrapper9 h1 {
+  /* the text background */
+  background: url(https://media.giphy.com/media/3og0IJViPshpW6FQQ0/giphy.gif) repeat ;
+  background-size: 50vw auto;
+  background-position: center;
+  
+  /* clip the text is possible */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* fallback text color */
+  color: black;
+
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900 ;
+  font-style: normal;
+
+
+
+  max-width: 100%;
+
+
+}
+
+
+
+/* 2022 section */
+
+
+
+
+
+.title_wrapper10 {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+
+
+}
+
+.title_wrapper10 h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+
+.container_solid10 {
+  /* background: rgb(80, 80, 80); */
+  
+background: url(https://lh3.googleusercontent.com/pw/ABLVV864tlSrDH05xLc28TGtvMzGlwVtwBFLU3Z9mrH8kqbqfLXh5FZcNaSumlfyXwOnYRdsXjey8xWHEXHRkbBD-e8bXTJYTU_FrBLzwCGn7KO4xuL6sn-DcMB1QlLJACIYxsxpi4xa0ZOiPCJmtHl8BKYChA=w1350-h739-s-no-gm?authuser=0);
+
+
+background-color: rgb(83, 83, 83);
+background-blend-mode: multiply;
+
+
+background-size: 100%;
+
+
+
+  /* position this container at the top of its parent element */
+  /* top: 0; */
+  max-width: 100%;
+}
+
+.container_solid10 .title_wrapper10 h1 {
+  /* the text background */
+  background: url(https://media.giphy.com/media/ZkcqVq1LQmR56/giphy.gif) repeat ;
+  background-size: 50vw auto;
+  background-position: center;
+  
+  /* clip the text is possible */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* fallback text color */
+  color: black;
+
+  font-family: 'Bungee Shade', sans-serif;
+
+
+  max-width: 100%;
+
+
+}
+
+
+
+
+.title_wrapper11 {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+
+
+}
+
+.title_wrapper11 h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+
+.container_solid11 {
+  /* background: rgb(80, 80, 80); */
+  
+    background: url(https://lh3.googleusercontent.com/pw/ABLVV85bQPcaXJ1tHnwRnc3gkI4gzJy-Y5aEn7VXwdQwqmZMGIQWMP_m5HMrS5J-IF8pGe7R5phIlFoUqGSerYPzws4vQXjc16A8qnCHjGyTpqotIQdYdYd5vwJyrOqXg0XlF1LAj0ZMwrUUEk_t0_-n8dce3w=w1315-h739-s-no-gm?authuser=0);
+
+    background-color: rgb(100, 100, 100);
+    background-blend-mode:  multiply ;
+
+    background-size: 100%;
+
+
+
+  /* position this container at the top of its parent element */
+  /* top: 0; */
+  max-width: 100%;
+}
+
+.container_solid11 .title_wrapper11 h1 {
+  /* the text background */
+  background: url(https://media.giphy.com/media/YMDcofciJYKzqBe6SM/giphy.gif) repeat ;
+  background-size: 50vw auto;
+  background-position: center;
+  
+  /* clip the text is possible */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* fallback text color */
+  color: black;
+
+
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900 ;
+  font-style: normal;
+
+
+  max-width: 100%;
+
+
+}
+
+
+/* 2023 section */
+
+
+
+
+
+
+
+.title_wrapper12 {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+
+
+}
+
+.title_wrapper12 h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+
+.container_solid12 {
+  /* background: rgb(80, 80, 80); */
+  background: url(https://lh3.googleusercontent.com/pw/ABLVV84nFxP5_s_UekKjmEBabl2fiNJLuGMHrUFuAjukuU_BTOf32uX54Qj0p_DQcWQJ9mCoMht4mDmgCDtcjgfrzHAkxYfl9C8XvfK1yFxdC4Iqg7dn5g3Cl6BgdgLZx4Y30WJe-eBMMia6gpk6dgMVZZj7mA=w985-h739-s-no-gm?authuser=0);
+
+  background-color: rgb(88, 88, 88);
+  background-blend-mode: multiply;
+  background-size: 100%;
+
+
+
+  /* position this container at the top of its parent element */
+  /* top: 0; */
+  max-width: 100%;
+}
+
+.container_solid12 .title_wrapper12 h1 {
+  /* the text background */
+  background: url(https://media.giphy.com/media/HHgn2t4cLofcqmBjFF/giphy-downsized-large.gif) repeat ;
+  background-size: 50vw auto;
+  background-position: center;
+  
+  /* clip the text is possible */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* fallback text color */
+  color: black;
+
+  font-family: 'Libre Barcode 39 Text', system-ui;
+
+  max-width: 100%;
+
+
+}
+
+
+
+
+.title_wrapper13 {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+
+
+}
+
+.title_wrapper13 h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+
+.container_solid13 {
+  /* background: rgb(80, 80, 80); */
+    background: url(https://lh3.googleusercontent.com/pw/ABLVV86Lmxrx1Pqu0Xkv43QWr61_In4FuVamMlkDq5Okzbfuzyrz8ak1cCqs_3Cl2pCAmUeiMSouTmdbUDkaGVnui8kjBLNgNd_xTxTufpDXNAjS5a-JF7dtp59QgLzWVZL9yuO0z5dhFGem6iMq1FXQ7152YA=w428-h580-s-no-gm?authuser=0);
+
+    background-color: darkgray;
+    background-blend-mode: multiply;
+    background-size: 30%;
+
+
+
+  /* position this container at the top of its parent element */
+  /* top: 0; */
+  max-width: 100%;
+}
+
+.container_solid13 .title_wrapper13 h1 {
+  /* the text background */
+  background: url(https://media.giphy.com/media/3o85xwylhk4kTkyBgY/giphy.gif) repeat ;
+  background-size: 50vw auto;
+  background-position: center;
+  
+  /* clip the text is possible */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* fallback text color */
+  color: black;
+
+
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900 ;
+  font-style: normal;
+
+  max-width: 100%;
+
+
+}
+
+/* present section */
+
+.title_wrapper14 {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+
+
+}
+
+.title_wrapper14 h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+
+.container_solid14 {
+  /* background: rgb(80, 80, 80); */
+    background: url(https://lh3.googleusercontent.com/pw/ABLVV87zAQyDw3-k_hNr07XY3Dvm-KctidZDJ-3m4NZ1-tjauOO42wMkWNGkbSGNzPCN3YW4L_6Zzbq5Ezugnz96SsSyfyZ0RXEm8HuISJ7VetZqgjMRC52wV_CWxy4M595SmrSydEprGvNQRsOSEFwdtPC0yg=w866-h739-s-no-gm?authuser=0);
+
+    background-color: darkgray;
+    background-blend-mode: multiply;
+
+
+
+    background-size: 100%;
+
+
+
+
+  /* position this container at the top of its parent element */
+  /* top: 0; */
+  max-width: 100%;
+}
+
+.container_solid14 .title_wrapper14 h1 {
+  /* the text background */
+  background: url(https://media.giphy.com/media/xTdx5usyM6nxuSK0RW/giphy.gif) repeat ;
+  background-size: 60vw auto;
+  background-position: center;
+  
+  /* clip the text is possible */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* fallback text color */
+  color: black;
+
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900 ;
+  font-style: normal;
+
+
+  max-width: 100%;
+
+
+}
+
+
+
+
+.title_wrapper15 {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+
+
+}
+
+.title_wrapper15 h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+
+.container_solid15 {
+  /* background: rgb(80, 80, 80); */
+  
+  background: url(https://lh3.googleusercontent.com/pw/ABLVV87fPGn8H_IfzYdK9EovS2PiJAQa7iJTtuI8cQNF-JBU9mqPX7zzMLONz3DDsLICyX2bIAlKs8JTMN5PnwvRY-ihn3H9rtuODZ8uOt3uV2wDRjAHWpQkCAU_sJsreSeZ95g_Dod2DodHsriWrNT3BEC9kw=w1314-h739-s-no-gm?authuser=0);
+
+  background-color: darkgray;
+  background-blend-mode: multiply;
+
+  background-size:100% ;
+
+
+  /* position this container at the top of its parent element */
+  /* top: 0; */
+  max-width: 100%;
+}
+
+.container_solid15 .title_wrapper15 h1 {
+  /* the text background */
+  background: url(https://media.giphy.com/media/3nZypGA07vzkA/giphy.gif) repeat ;
+  background-size: 50vw auto;
+  background-position: center;
+  
+  /* clip the text is possible */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* fallback text color */
+  color: black;
+
+
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900 ;
+  font-style: normal;
+
+  max-width: 100%;
+
+
+}
+
+
+
+
+/* others */
+
+
+.title_wrapper16 {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+
+
+}
+
+.title_wrapper16 h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+
+.container_solid16 {
+  /* background: rgb(80, 80, 80); */
+    background: url(https://media.giphy.com/media/IWh026Lok0b7y/giphy.gif);
+    background-size: 120%;
+
+
+
+
+  /* position this container at the top of its parent element */
+  /* top: 0; */
+  max-width: 100%;
+}
+
+.container_solid16 .title_wrapper16 h1 {
+  /* the text background */
+  background: url(https://media.giphy.com/media/R2dfRPaLF0TLMI2jyw/giphy-downsized-large.gif) repeat ;
+  background-size: 50vw auto;
+  background-position: center;
+  
+  /* clip the text is possible */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* fallback text color */
+  color: black;
+  
+
+  
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900 ;
+  font-style: normal;
+
+  max-width: 100%;
+
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: black;
+    font-size: 50px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+
+
+
+<body translate="no">
+
+
+
+
+  <!-- <header> -->
+
+
+
+    <section>
+  <!-- First container -->
+  <div class="container container_solid">
+    <div class="title_wrapper">
+      <h1>System.out.println("Hello  你好!")</h1>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>        
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <!-- Second container -->
+  <div class="container container_image" aria-hidden="true">
+    <div class="title_wrapper">
+      <h1>out.println("Resume")</h1>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+<!-- </header> -->
+
+  <!-- Content  -->
+  <!-- 2018 -->
+    <div class="container container_solid2">
+        <div class="title_wrapper2">
+          <h1>工作經歷 <br>
+            WORK EXPERIENCE
+          </h1>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>        
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    
+    
+    <div class="container container_solid3">
+        <div class="title_wrapper3">
+          <h1> 力鵬企業股份有限公司-楊梅廠-織布廠 <br> 任職
+            <br> 2年4個月<br>
+            2YEARS AND 4 MONTHS IN LIBOLON ENTERPRISE CO., LTD. WEAVING FACTORY IN YANG-MEI , TAOYUANG
+          </h1>
+        </div>
+      </div>
+      <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+    <!-- 2019 -->
+
+    
+    <div class="container container_solid4">
+      <div class="title_wrapper4">
+        <h1>職位 <br>
+            OCCUPATION
+        </h1>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>        
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+  
+  <div class="container container_solid5">
+      <div class="title_wrapper5">
+        <h1>研發課作業員 <br>
+            RESEARCHAL OPERATOR
+        </h1>
+      </div>
+    </div>
+    <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<!-- 2020 -->
+
+<div class="container container_solid6">
+  <div class="title_wrapper6">
+    <h1>工作內容 <br>
+        WORK CONTENT
+    </h1>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>        
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="container container_solid7">
+  <div class="title_wrapper7">
+    <h1>顧打樣,試樣,實驗性質機台、跑研發課現場到辦公室作業流程、試染退漿胚布、
+        運送打樣胚布庫存到別的部門
+        、胚布庫存入帳出帳管理、領緯紗補緯紗到現場機台上、
+        、打樣試樣紗線織機測試、織物烘乾流程管理、打樣機台落布流程處理及管理、研發課緯紗倉庫管理 <br>
+    MANAGING SAMPLE/EXPERIMENTAL SAMPLE PROCESS,ITEMS,YARNS,WEAVING  MANAGEMENT WITH OPERATION   </h1>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- 2021 -->
+
+<div class="container container_solid8">
+  <div class="title_wrapper8">
+    <h1></h1>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container container_solid9">
+  <div class="title_wrapper9">
+    <h1></h1>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- <p></p> -->
+
+
+
+
+<!-- 2022-->
+
+
+
+<div class="container container_solid10">
+  <div class="title_wrapper10">
+    <h1>離職原因 <br>
+        THE REASON THAT I RESIGN
+    </h1>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container container_solid11">
+  <div class="title_wrapper11">
+    <h1>因為考慮到未來如果要養家照顧身邊的人,繼續做這行10年薪水漲幅不會超過4萬,所以藉由當兵機會決定果斷離職 <br>
+        CONSIDER OF THE ABILITY OF TAKING OF LOVE ONES , I DECIDE TO RESGIN DUE TO ITS LOW-SALARY 
+    </h1>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- <p> </p> -->
+
+
+
+<!-- 2023 -->
+
+<div class="container container_solid12">
+  <div class="title_wrapper12">
+    <h1>2023.05.11 <br>
+    軍旅生涯開始 <br>
+MILITARY SERVICE BEGIN </h1>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container container_solid13">
+  <div class="title_wrapper13">
+    <h1></h1>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- present -->
+
+
+<div class="container container_solid14">
+  <div class="title_wrapper14">
+    <h1>2023.08.31
+    <br>
+    期滿役畢
+    <br>
+    DONE MILITARY SERVICE
+    </h1>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container container_solid15">
+  <div class="title_wrapper15">
+    <h1>2023.11.03 <br>  
+        程式開始<br>
+        print("HELLO WORLD !") </h1>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+ 
+<!-- <p> </p> -->
+
+
+
+
+<!-- others -->
+
+
+  
+  <div class="container container_solid16">
+    <div class="title_wrapper16">
+      <h1> 作品集 <br>
+    COLLECTION </h1>
+    </div>
+</div>
+    
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ 
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<section>
+<h1 style="text-align: center; text-decoration: none;list-style-type: none; color: chartreuse; cursor: pointer " ><a  onclick="openPopup('https://gray-drusie-67.tiiny.co/')">頁面互動式動畫(電腦版滑下即可觸發)  <br> SCROLL TRANSITION (PC VERSION AVAILABLE ONLY ) </a></h1>
+
+<h1 style="text-align: center; text-decoration: none;list-style-type: none; color: chartreuse; cursor: pointer ;" ><a  onclick="openPopup('https://gray-heda-62.tiiny.site/')">頁面動態設計樣本 <br> ANIMATION PAGE SAMPLE </a></h1>
+
+
+
+<h1 style="text-align: center; text-decoration: none;list-style-type: none; color: chartreuse; cursor: pointer ;" ><a  onclick="openPopup('https://amber-aubry-85.tiiny.co/')">頁面動態設計樣本2 <br> ANIMATION PAGE SAMPLE2 </a></h1>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<script>
+    function openPopup(url) {
+        // Open the linked page in a new window
+        window.open(url, 'popupWindow', 'width=600,height=400');
+        
+        // Prevent the default behavior of the link
+        return false;
+    }
+</script>
+
+
+
+</section>
+
+
+</body>
+
+</html>

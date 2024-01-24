@@ -1,0 +1,493 @@
+
+
+
+
+
+
+
+        /* Style your navigation bar */
+        .navbar1 {
+            background-color: rgba(255, 0, 0, 0.4);
+            padding: 15px;
+            color: rgba(255, 242, 0, 0.8);
+            text-shadow: 2px 3px 5px rgb(0, 21, 255);
+            position: fixed;
+            width: 10%;
+            top: -510px;
+            left: 90%;
+            font-size: 30px ;
+            
+            transition: top 0.3s;
+        }
+
+        /* Add a margin to your content to prevent it from being overlaid by the fixed bar */
+        .content {
+            margin-top: 60px; /* Adjust this value based on your navigation bar's height */
+            padding: 20px;
+            font-size: 25px ;
+            
+        }
+   
+        @media (max-width: 600px) {
+          .navbar1 
+           {
+            
+            background-color: rgba(252, 252, 252, 0.055);
+            padding: 8px;
+            color: rgb(0, 255, 0);
+            text-shadow: 2px 2px 2px rgb(25, 0, 255);
+            position: fixed;
+            width: 10%;
+            right:0% ;
+            font-size: 10px;
+        
+ 
+        }
+        }
+
+
+
+
+
+/* Customize the main navbar */
+.nav.nav-pills {
+    background-color: rgba(200, 200, 200, 0.5); /* Replace with your preferred color */
+  }
+
+
+
+ 
+  
+  .nav-item a.nav-link {
+    color: rgba(228, 228, 228, 0.9); /* Replace with your preferred color */
+ /* Add additional styles as needed */
+  }
+  
+
+
+
+
+
+
+
+
+
+  /* Customize the dropdown menu */
+  .dropdown-menu {
+    background-color:rgba(219, 219, 219, 0.22); /* Replace with your preferred color */
+     border:  solid rgba(82, 82, 82, 0.1) 3px ; /* Replace with your preferred color */
+ 
+
+  }
+
+
+  @media (max-width: 600px) 
+  {
+    .dropdown-menu 
+     {
+      
+      background-color:rgb(255, 0, 0); /* Replace with your preferred color */
+  
+ 
+    }
+  }
+
+  
+
+  
+  .dropdown-item {
+    color : rgba(224, 217, 217, 0.896) ; /* Replace with your preferred color */
+    /* Add additional styles as needed */
+
+
+  }
+
+  @media (max-width: 600px) 
+  {
+    .dropdown-item {
+      
+      color:rgba(4, 255, 0, 0.968); /* Replace with your preferred color */
+ 
+    }
+  }
+
+  .dropdown-item:hover {
+    color : rgba(254, 0, 0, 0.8) ; /* Replace with your 
+    preferred color */
+    /* Add additional styles as needed */
+    background-color: rgba(4, 0, 254, 0.784);
+
+  }
+  
+
+
+
+
+
+body
+{
+background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmI2ZzM2Z3NkemRoNGk1MXd5eDk2cjRnbGJmanN3cnFraWJ6MmR3dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xUPGcezGBHRv3mo1XO/giphy.gif') ;
+background-repeat: repeat;
+background-size: 100%;
+height: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin: auto;
+text-align: center;
+color:rgba(187,203,201,0.9);
+font-family: 'Teko', sans-serif;
+
+
+flex: 1; /* Allows the main content area to grow and take remaining space */
+
+
+
+
+}
+
+
+#cc31
+{
+
+  font-size: 50px;
+  color: chartreuse;
+}
+
+
+
+.t2
+{
+
+padding:5rem;
+margin-top: 65px;
+color: rgba(234, 249, 189, 0.9);
+text-shadow: 1px 1px 4px rgba(5, 251, 46,0.6);
+
+font-family: 'Teko', sans-serif;
+font-size: 80px;
+
+}
+
+
+
+
+
+#app
+ {
+  border: solid rgba(86, 86, 86, 0.1)  3px;
+
+  padding: 0px;
+
+  align-content: center;
+
+ 
+  justify-content: center; /* Horizontally center the content */
+  
+}
+#app div 
+{
+  width: 20rem;
+  height: auto;
+  padding: 20px;
+  cursor: pointer;
+  color: rgba(221, 221, 221, 0.9);
+  text-shadow: 2px 5px 2px rgba(250, 0, 0, 0.784);
+  font-size: 30px;
+  font-weight: bold;
+  align-content: center;
+  text-align: center;
+}
+
+
+
+.pop-out-enter-active, .pop-out-leave-active {
+  transition: transform 0.5s;
+}
+.pop-out-enter, .pop-out-leave-to {
+  transform: scale(0);
+}
+
+.carousel-item .text
+{
+  background: rgba(47, 47, 47, 0.9)  ;
+
+  font-weight: 800 ;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-image:url('https://www.fubiz.net/wp-content/uploads/2017/11/tokyo12.gif') ;
+    background-size: 100%;
+    font-size: 20px;
+
+  }
+
+  .carousel-item .text
+  {
+    background: rgba(47, 47, 47, 0.688)  ;
+    color: #e08a00;
+    text-shadow: 2px 2px 3px red;
+    font-weight: 800 ;
+  }
+
+
+
+}
+
+@media (max-width: 600px) 
+{
+  .t2 {
+    
+    font-size: 35px;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Pinyon Script', cursive;
+    font-family: 'Silkscreen', sans-serif;
+    color: rgba(25, 250, 0, 0.984);
+    text-shadow: 3px 5px 5px  rgba(4, 0, 254, 0.784);
+    
+  }
+}
+
+
+  #app2 {
+    border: solid rgba(82, 82, 82, 0.4) 3px;
+    height: auto;
+    width:  auto;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  
+
+  
+
+
+  #app2 img
+   {
+    width: 100%;
+    cursor: pointer;
+  }
+  #green {
+    background-color: lightgreen;
+    color: rgba(250, 0, 0, 0.784);
+    display: inline-block;
+  }
+
+
+
+
+
+  @media (max-width: 600px) 
+  {
+     h2 {
+      
+      color: rgba(25, 250, 0, 0.984);
+      text-shadow: 2px 2px 2px  rgb(25, 0, 255);
+    }
+  }
+
+footer
+{
+
+
+  flex: 1; /* Allows the main content area to grow and take remaining space */
+background-color:rgba(178, 0, 223, 0.253);
+color: rgba(255, 0, 0, 0.9);
+text-shadow: 5px 2px 3px rgb(25, 0, 255);
+
+font-size: 2rem;
+
+width: 100%;
+padding: 0 auto;
+text-align:center;
+justify-content: center;
+ /* Pushes the footer to the bottom */
+margin-top: auto;
+margin: auto;
+
+}
+
+footer p
+{
+
+font-weight:bolder ;
+
+font-family: 'Pacifico', cursive;
+font-family: 'Pinyon Script', cursive;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.letter-image {
+  position: absolute;
+  top: auto;
+  left: auto;
+  width: 200px;
+  height: 200px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.animated-mail {
+  position: absolute;
+  height: 150px;
+  width: 200px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+}
+.animated-mail .body {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 100px 200px;
+  border-color: transparent transparent #ff9d00 transparent;
+  z-index: 2;
+}
+.animated-mail .top-fold {
+  position: absolute;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 100px 0 100px;
+  -webkit-transform-origin: 50% 0%;
+  -webkit-transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
+  -moz-transform-origin: 50% 0%;
+  -moz-transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
+  transform-origin: 50% 0%;
+  transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
+  border-color: #e08a00 transparent transparent transparent;
+  z-index: 2;
+}
+.animated-mail .back-fold {
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  height: 100px;
+  background: #ff9d00;
+  z-index: 0;
+}
+.animated-mail .left-fold {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 0 50px 100px;
+  border-color: transparent transparent transparent #e88f00;
+  z-index: 2;
+}
+.animated-mail .letter {
+  left: 20px;
+  bottom: 0px;
+  position: absolute;
+  width: 160px;
+  height: 60px;
+  background: rgb(195, 195, 195);
+  z-index: 1;
+  overflow: hidden;
+  -webkit-transition: 0.4s 0.2s;
+  -moz-transition: 0.4s 0.2s;
+  transition: 0.4s 0.2s;
+}
+.animated-mail .letter .letter-border {
+  height: 10px;
+  width: 100%;
+  background: repeating-linear-gradient(-45deg, rgb(195, 195, 195), rgb(195, 195, 195)8px, transparent 8px, transparent 18px);
+}
+.animated-mail .letter .letter-title {
+  margin-top: 10px;
+  margin-left: 5px;
+  height: 10px;
+  width: 40%;
+  background: #ff8400;
+}
+.animated-mail .letter .letter-context {
+  margin-top: 10px;
+  margin-left: 5px;
+  height: 10px;
+  width: 20%;
+  background: #ff6f00;
+}
+.animated-mail .letter .letter-stamp {
+  margin-top: 30px;
+  margin-left: 120px;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  background: #ff0008;
+  opacity: 0.3;
+}
+
+.shadow {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  width: 400px;
+  height: 30px;
+  transition: 0.4s;
+  transform: translateX(-50%);
+  -webkit-transition: 0.4s;
+  -webkit-transform: translateX(-50%);
+  -moz-transition: 0.4s;
+  -moz-transform: translateX(-50%);
+  border-radius: 100%;
+  background: radial-gradient(rgba(197, 197, 197, 0.5), rgba(169, 169, 169, 0), rgba(178, 178, 178, 0));
+}
+
+.letter-image:hover .animated-mail {
+  transform: translateY(50px);
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+}
+.letter-image:hover .animated-mail .top-fold {
+  transition: transform 0.4s, z-index 0.2s;
+  transform: rotateX(180deg);
+  -webkit-transition: transform 0.4s, z-index 0.2s;
+  -webkit-transform: rotateX(180deg);
+  -moz-transition: transform 0.4s, z-index 0.2s;
+  -moz-transform: rotateX(180deg);
+  z-index: 0;
+}
+.letter-image:hover .animated-mail .letter {
+  height: 180px;
+}
+.letter-image:hover .shadow {
+  width: 250px;
+}
+
+
+
+
+
+
+
+
+
+
